@@ -17,7 +17,7 @@ function DesignCard({ item }: any) {
 
             <div className='mt-2'>
                 <h2 className='line-clamp-3 text-gray-400 text-sm'>{item?.description}</h2>
-                <div className='flex justify-between items-center mt-4'>
+                <div className='flex justify-between flex-col lg:flex-row items-center mt-4'>
                     <div className='flex  items-center gap-2 p-2 bg-gray-50 rounded-full '>
                         {modelObj && <Image src={modelObj?.icon} alt={modelObj?.modelName ?? ''}
                             width={30}
